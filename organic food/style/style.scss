@@ -305,6 +305,7 @@ header {
 
   min-height: 490px;
   @include section-header;
+  padding-top: 0;
   p{
     width: 546px;
   }
