@@ -33,7 +33,7 @@ $header-height: 110px;
 
   }
   p {
-    margin: 0 auto 90px;
+    margin: 0 auto 40px;
     text-align: center;
     color: #b3b3b3;
     font-family: "Open Sans";
@@ -334,8 +334,9 @@ header {
   background: url("../images/agro-perfect-background.jpg") no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
+  padding-top: 100px;
   padding-left: 215px;
-
+  margin-bottom: -1em;
   h2{
     width: 300px;
     color: #ffffff;
@@ -360,4 +361,22 @@ header {
 
 .agro-perfect__submit:active {
   padding: 3px 0 0 3px;
+}
+.examples-of-food{
+  width: 100%;
+  height: 470px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+.examples-of-food__content{
+  width: 1170px;
+  height: 440px;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr 1fr;
+  border: 1px solid #000;
+  background-color: #fff;
+  top: -95px;
 }
