@@ -207,48 +207,79 @@
         <p>Latin words, combined with a handful of model sentence structures, to generate
             Lorem Ipsum which looks reasonable.</p>
         <div class="people-say-container">
-            <a href="" id="button-left" class="people-say__button people-say__button_left">&lt;</a>
+            <a href="javascript:buttonLeft(-1)" id="button-left" class="people-say__button people-say__button_left">&lt;</a>
             <div class="people-say__content">
-                <p id="dialog-1" class="people-say__dialog">Latin words, combined with a handful of model
+                <p id="dialog-1" class="people-say__dialog dialog_show">Latin words, combined with a handful of model
                     sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem
                     Ipsum is therefore always free from repetition injected humour, or non-characteristic
                     words etc.  Contrary to popular belief, Lorem Ipsum is not simply random text. It has
                     roots in a piece of classical Latin literature from 45 BC</p>
-                <p id="dialog-2" class="people-say__dialog dialog_none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis fuga labore optio quam
+                <p id="dialog-2" class="people-say__dialog">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis fuga labore optio quam
                     sapiente! Deleniti nobis obcaecati temporibus vel.</p>
-                <p id="dialog-3" class="people-say__dialog  dialog_none">Ab aliquid assumenda consequatur deleniti distinctio earum expedita facere facilis illum, ipsum
+                <p id="dialog-3" class="people-say__dialog">Ab aliquid assumenda consequatur deleniti distinctio earum expedita facere facilis illum, ipsum
                     laboriosam laudantium maiores optio quidem repellat sit voluptatibus? Lorem ipsum dolor
                     sit amet, consectetur adipisicing elit. Culpa enim itaque repellendus rerum tempore ut!</p>
 
-                <figure id="people-1" class="people-say__people">
+                <figure id="people-1" class="people-say__people people_show">
                     <img src="images/person-1.jpg" alt="Person photo">
                     <figcaption>
                         <p><span>Terens Smith</span>/CEO AntalAgro</p>
                     </figcaption>
                 </figure>
-                <figure id="people-2" class="people-say__people people_none">
+                <figure id="people-2" class="people-say__people ">
                     <img src="images/person-2.jpg" alt="Person photo">
                     <figcaption>
                         <p><span>Jack Lorem</span>/CEO AntalAgro</p>
                     </figcaption>
                 </figure>
-                <figure id="people-3" class="people-say__people people_none">
+                <figure id="people-3" class="people-say__people ">
                     <img src="images/person-3.jpg" alt="Person photo">
                     <figcaption>
                         <p><span>Linda Kolin</span>/Web-senior AntalAgro</p>
                     </figcaption>
                 </figure>
                 <nav class="people-say__navigate">
-                    <a href="" id="nav-1" class="people-say__navigate__point point-active"></a>
-                    <a href="" id="nav-2" class="people-say__navigate__point"></a>
-                    <a href="" id="nav-3" class="people-say__navigate__point"></a>
+                    <div id="nav-1" class="people-say__navigate__point point-active"></div>
+                    <div id="nav-2" class="people-say__navigate__point"></div>
+                    <div id="nav-3" class="people-say__navigate__point"></div>
                 </nav>
             </div>
-            <a href="" id="button-right" class="people-say__button people-say__button_right">&gt;</a>
+            <a href="javascript:buttonLeft(1)" id="button-right" class="people-say__button people-say__button_right">&gt;</a>
         </div>
     </section>
 
 
 </div>
+<script>
+    function moveElement(){
+        document.getElementsByClassName('point-active')[0].classList.remove('point-active');
+        document.getElementsByClassName('dialog_show')[0].classList.remove('dialog_show');
+        document.getElementsByClassName('people_show')[0].classList.remove('people_show');
+    }
+    function addElement(num){
+        document.getElementById('nav-'+num).classList.add('point-active');
+        document.getElementById('dialog-'+num).classList.add('dialog_show');
+        document.getElementById('people-'+num).classList.add('people_show');
+    }
+    let pointNav=document.getElementsByClassName('people-say__navigate__point');
+    for (let i=0;i<pointNav.length;i++){
+        pointNav[i].onclick=function(){
+            moveElement();
+            addElement(i+1);
+        }
+    }
+
+    function buttonLeft(sideNav){
+        let navPosition=document.getElementsByClassName('point-active')[0].id.split('-')[1];
+        let colElement=document.getElementsByClassName('people-say__navigate__point').length;
+        let activeElement=navPosition;
+        if (sideNav>0) activeElement++;
+        else activeElement--;
+        if(activeElement>colElement)activeElement=1;
+        else if(activeElement==0)activeElement=colElement;
+        moveElement();
+        addElement(activeElement);
+    }
+</script>
 </body>
 </html>

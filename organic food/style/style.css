@@ -30,12 +30,10 @@ body {
   width: 1600px;
   position: relative;
   margin: 0 auto;
-  top: -110px;
   background-color: #fff; }
 
 header {
-  position: relative;
-  top: 110px;
+  position: absolute;
   min-height: 110px;
   padding: 0 215px;
   display: flex;
@@ -600,7 +598,6 @@ header {
   left: -45px; }
 
 .people-say .people-say__content .people-say__dialog {
-  display: block;
   width: 100%;
   height: 113px;
   color: #ffffff;
@@ -608,15 +605,16 @@ header {
   font-style: italic;
   font-size: 25px;
   font-weight: 400;
-  line-height: 30px; }
-
-.people-say .people-say__content .dialog_none {
+  line-height: 30px;
   display: none; }
+
+.people-say .people-say__content .dialog_show {
+  display: block; }
 
 .people-say__people {
   margin: 0;
   width: 350px;
-  display: flex; }
+  display: none; }
   .people-say__people img {
     margin-right: 25px;
     width: 69px;
@@ -637,8 +635,8 @@ header {
       .people-say__people figcaption P span {
         font-weight: 700; }
 
-.people_none {
-  display: none; }
+.people_show {
+  display: flex; }
 
 .people-say__navigate {
   display: flex;
@@ -652,6 +650,9 @@ header {
   height: 12px;
   border: 2px solid #5b5b5b;
   border-radius: 50%; }
+
+.people-say__navigate__point:hover {
+  cursor: pointer; }
 
 .point-active {
   background-color: #fcdb5a; }
