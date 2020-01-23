@@ -3,6 +3,7 @@ $text-color: black;
 $header-height: 110px;
 $content-width: 100%;
 $button-size: 60px;
+$footer-width-block: 62%;
 @mixin logo {
   width: 100px;
   height: 165px;
@@ -740,4 +741,135 @@ header {
 .people-say__navigate__point:hover {
   background-color: #fcdb5a;
 
+}
+.blog-posts{
+  @include section-header;
+  min-height: 1095px;
+}
+.blog-posts__content{
+  margin: 0 auto;
+  width: 75%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-posts__news{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 370px;
+  height: 396px;
+  padding: 235px 30px 25px;
+  position: relative;
+  display: block;
+}
+.blog-post-bread{
+  background: url("../images/blog-post-bread.jpg") no-repeat;
+}
+.blog-post-vegetable{
+  background: url("../images/blog-post-vegetable.jpg") no-repeat;
+}
+.blog-post-milk{
+  background: url("../images/blog-post-milk.jpg") no-repeat;
+}
+.news-date{
+  width: 61px;
+  height: 65px;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  padding-top: 17px;
+  background-color: #fcdb5a;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  filter: none;
+}
+.news-date .news-date__day{
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: #333333;
+  font-family: "Gilroy";
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.news-date .news-date__month{
+  width: inherit;
+  color: #9a8841;
+  font-family: "Raleway";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 10px;
+}
+.blog-posts__news .blog-post__news__title{
+  display: block;
+  margin-top: 80px;
+  color: #ddc051;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+.blog-post__news__text{
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 50px;
+  width: inherit;
+  text-align: left;
+  text-decoration: none;
+}
+.blog-post__news__text:hover{
+  color: yellowgreen;
+}
+.blog-post__news__text:active{
+  color: orange;
+}
+.blog-posts__partners{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 130px auto 0;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  min-height: 165px;
+
+}
+.blog-posts__partners___company{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid transparent;
+}
+.blog-posts__partners___company:hover{
+  border: 2px solid yellowgreen;
+  border-radius: 10px 20px 30px 40px/30px;
+}
+.blog-posts__partners___company:active{
+  border: 2px solid orange;
+}
+.organic-footer{
+  width: $content-width;
+  display: flex;
+  min-height: 503px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.organic-data{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #333333;
+  padding: 75px 100px 36px 225px;
+  width: $footer-width-block;
+}
+.organic-map{
+  width: 100%-$footer-width-block;
 }
