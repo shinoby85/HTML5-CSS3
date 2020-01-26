@@ -149,17 +149,23 @@ header {
   font-family: Raleway;
   font-size: 12px;
   font-weight: 700;
-  line-height: 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
-  outline: none;
+  text-decoration: none;
 }
 
 .header__submit:hover {
   cursor: pointer;
+  background-color: #fcdb5a;
 }
 
 .header__submit:active {
-  padding: 3px 0 0 3px;
+  top: 1px;
+  left: 1px;
+  background-color: yellowgreen;
 }
 
 .organic-food {
@@ -208,6 +214,7 @@ header {
 
 .organic-food__food__category p span {
   font-weight: 900;
+  display: block;
 }
 
 .organic-food__food .awesome {
@@ -267,30 +274,21 @@ header {
 }
 
 .slogan__image {
-  width: 720px;
-  height: 490px;
-  background: url("../images/slogan.jpg") no-repeat;
-  position: relative;
-}
-
-.slogan__image__frame {
-  width: 330px;
-  height: 490px;
-  position: absolute;
-  background: url("../images/slogan-frame.jpg") no-repeat 50% 50%,
-  url("../images/slogan-back.jpg") no-repeat;
-  top: -36px;
-  right: -38px;
-}
-
-.slogan__image__frame__text {
-  width: 515px;
-  height: 425px;
-  position: absolute;
-  top: 44px;
-  right: -405px;
+  //width: 720px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 73em;
+  height: 530px;
+  padding: 45px 0 0 40em;
+  background: url("../images/slogan-frame.jpg") no-repeat 52% 25%,
+  url("../images/slogan-back.jpg") no-repeat 52% 0%,
+  url("../images/slogan.jpg") no-repeat 0% 100%;
 
   p {
+    display: block;
+    width: 520px;
+    height: 424px;
     font-family: Storytella;
     font-size: 100px;
     font-weight: 400;
@@ -319,6 +317,52 @@ header {
   }
 }
 
+//.slogan__image__frame {
+//  width: 330px;
+//  height: 490px;
+//  position: absolute;
+//  background: url("../images/slogan-frame.jpg") no-repeat 50% 50%,
+//  url("../images/slogan-back.jpg") no-repeat;
+//  top: -36px;
+//  right: -38px;
+//}
+//
+//.slogan__image__frame__text {
+//  width: 515px;
+//  height: 425px;
+//  position: absolute;
+//  top: 44px;
+//  right: -405px;
+//
+//  p {
+//    font-family: Storytella;
+//    font-size: 100px;
+//    font-weight: 400;
+//    line-height: 100px;
+//    margin: 0;
+//
+//    .color-yellow {
+//      color: #fcdb5a;
+//    }
+//
+//    .color-pink {
+//      color: #db2985;
+//    }
+//
+//    .color-green {
+//      color: #72aa41;
+//    }
+//
+//    .color-orange {
+//      color: #f2a137;
+//    }
+//
+//    .color-lightblue {
+//      color: #4fb1c9;
+//    }
+//  }
+//}
+
 .agro-services {
 
   min-height: 445px;
@@ -333,23 +377,36 @@ header {
 .agro-services__content {
   min-height: 105px;
   width: 82%;
-  margin: 0 auto;
+  margin: 95px auto 0;
   display: flex;
   justify-content: space-between;
+
 }
 
 .agro-services__type-of-agro {
   min-width: 140px;
   text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 15px;
 
-  figcaption {
+  span {
+    display: block;
     margin-top: 34px;
     color: #333333;
     font-family: Raleway;
     font-size: 15px;
     font-weight: 700;
-    line-height: 50px;
   }
+}
+
+.agro-services__type-of-agro:hover {
+  border: 2px solid #fcdb5a;
+  border-radius: 10px 20px 30px 40px/30px;
+}
+
+.agro-services__type-of-agro:active {
+  border: 2px solid yellowgreen;
 }
 
 .agro-perfect {
@@ -378,18 +435,26 @@ header {
 .agro-perfect__submit {
   width: 160px;
   height: 54px;
+  display: flex;
+  color: #4f4a37;
   border-radius: 26px;
   background-color: #fcdb5a;
   text-transform: uppercase;
-  outline: none;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .agro-perfect__submit:hover {
   cursor: pointer;
+  background-color: orange;
 }
 
 .agro-perfect__submit:active {
-  padding: 3px 0 0 3px;
+  background-color: darkorange;
+  top: 1px;
+  left: 1px;
 }
 
 .examples-of-food {
@@ -418,8 +483,6 @@ header {
 
   img {
     float: left;
-    width: 292px;
-    height: 220px;
   }
 
   figcaption {
@@ -685,30 +748,27 @@ header {
 
   img {
     margin-right: 25px;
-    width: 69px;
-    height: 69px;
     border-radius: 50%;
   }
 
-  figcaption {
+
+  P {
     height: 100%;
     display: flex;
     align-items: center;
+    margin: 0;
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    line-height: 23px;
+    font-family: "Raleway";
+    font-weight: 400;
 
-    P {
-      margin: 0;
-      color: #fff;
-      text-align: left;
-      font-size: 18px;
-      line-height: 23px;
-      font-family: "Raleway";
-      font-weight: 400;
-
-      span {
-        font-weight: 700;
-      }
+    span {
+      font-weight: 700;
     }
   }
+
 }
 
 .people_show {
@@ -864,12 +924,12 @@ header {
 }
 
 .blog-posts__partners___company:hover {
-  border: 2px solid yellowgreen;
+  border: 2px solid #fcdb5a;
   border-radius: 10px 20px 30px 40px/30px;
 }
 
 .blog-posts__partners___company:active {
-  border: 2px solid orange;
+  border: 2px solid yellowgreen;
 }
 
 .organic-footer {

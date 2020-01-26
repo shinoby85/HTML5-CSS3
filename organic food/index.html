@@ -5,124 +5,136 @@
     <title>Organic foods</title>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
+
 </head>
 <body>
 <div class="container">
     <header>
         <div class="header__logo"></div>
         <nav class="header__menu">
-            <a href="#" class="header__menu-items">Home</a>
-            <a href="#" class="header__menu-items">About</a>
-            <a href="#" class="header__menu-items">Pages</a>
-            <a href="#" class="header__menu-items">Gallery</a>
-            <a href="#" class="header__menu-items">Blog</a>
-            <a href="#" class="header__menu-items">Contacts</a>
+            <a href="#home" class="header__menu-items">Home</a>
+            <a href="#about" class="header__menu-items">About</a>
+            <a href="#pages" class="header__menu-items">Pages</a>
+            <a href="#gallery" class="header__menu-items">Gallery</a>
+            <a href="#blog" class="header__menu-items">Blog</a>
+            <a href="#contacts" class="header__menu-items">Contacts</a>
         </nav>
-        <input type="submit" class="header__submit" value="Get in Touch">
+        <!--        <input type="submit" class="header__submit" value="Get in Touch">-->
+        <a href="" class="header__submit">Get in Touch</a>
     </header>
 
-    <section class="organic-food">
+    <section id="home" class="organic-food">
         <h1 class="organic-food__title">Organic Food</h1>
         <div class="organic-food__food">
             <a href="#" class="organic-food__food__category awesome">
-                <p><span>Awesome</span><br> Sweets</p>
+                <p><span>Awesome</span> Sweets</p>
             </a>
             <a href="#" class="organic-food__food__category organic">
-                <p><span>Organic</span><br>food</p>>
+                <p><span>Organic</span> food</p>
             </a>
             <a href="#" class="organic-food__food__category tasty">
-                <p><span>tasty</span><br> meat</p>
+                <p><span>tasty</span> meat</p>
             </a>
             <a href="#" class="organic-food__food__category agro">
-                <p><span>Agro</span><br>awesome<br>Products</p>
+                <p><span>Agro</span> awesome Products</p>
             </a>
             <a href="#" class="organic-food__food__category juicy">
-                <p><span>Juicy</span>
-                    <br>Fruits</p>
+                <p><span>Juicy</span> Fruits</p>
             </a>
         </div>
     </section>
-    <section class="slogan">
+    <section id="about" class="slogan">
         <div class="slogan__image">
-            <div class="slogan__image__frame">
-                <div class="slogan__image__frame__text">
-                    <p>
-                        <span class="color-yellow">Quality </span>
-                        <span class="color-pink">food is the </span>
-                        <span class="color-green">most important </span>
-                        <span class="color-orange">thing in our </span>
-                        <span class="color-lightblue">life</span>
-                    </p>
+            <p>
+                <span class="color-yellow">Quality </span>
+                <span class="color-pink">food is the </span>
+                <span class="color-green">most important </span>
+                <span class="color-orange">thing in our </span>
+                <span class="color-lightblue">life</span>
+            </p>
 
-                </div>
-            </div>
+
+            <!--            <div class="slogan__image__frame">-->
+            <!--                <div class="slogan__image__frame__text">-->
+            <!--                    <p>-->
+            <!--                        <span class="color-yellow">Quality </span>-->
+            <!--                        <span class="color-pink">food is the </span>-->
+            <!--                        <span class="color-green">most important </span>-->
+            <!--                        <span class="color-orange">thing in our </span>-->
+            <!--                        <span class="color-lightblue">life</span>-->
+            <!--                    </p>-->
+
+            <!--                </div>-->
+            <!--            </div>-->
         </div>
     </section>
     <section class="agro-services">
         <h2><span>Agro food</span> Services</h2>
         <p>Latin words, combined with a handful of model sentence structures,
             to generate Lorem Ipsum which looks reasonable.</p>
-        <div class="agro-services__content">
-            <figure class="agro-services__type-of-agro">
+        <nav class="agro-services__content">
+            <a href="#" class="agro-services__type-of-agro">
                 <img src="images/steack-house.png" alt="Label agro food">
-                <figcaption>Steak House</figcaption>
-            </figure>
-            <figure class="agro-services__type-of-agro">
+                <span>Tasty Cereals</span>
+            </a>
+            <a href="#" class="agro-services__type-of-agro">
                 <img src="images/Tasty-Cereals.png" alt="Label agro food">
-                <figcaption>Tasty Cereals</figcaption>
-            </figure>
-            <figure class="agro-services__type-of-agro">
+                <span>Tasty Cereals</span>
+            </a>
+            <a href="#" class="agro-services__type-of-agro">
                 <img src="images/Italian-Pizza.png" alt="Label agro food">
-                <figcaption>Italian Pizza</figcaption>
-            </figure>
-            <figure class="agro-services__type-of-agro">
+                <span>Italian Pizza</span>
+            </a>
+            <a href="#" class="agro-services__type-of-agro">
                 <img src="images/Vegeterian-Burgers.png" alt="Label agro food">
-                <figcaption>Vegeterian Burgers</figcaption>
-            </figure>
-            <figure class="agro-services__type-of-agro">
+                <span>Vegeterian Burgers</span>
+            </a>
+            <a href="#" class="agro-services__type-of-agro">
                 <img src="images/Awesome-Cupcake.png" alt="Label agro food">
-                <figcaption>Awesome Cupcake</figcaption>
-            </figure>
-            <figure class="agro-services__type-of-agro">
+                <span>Awesome Cupcake</span>
+            </a>
+            <a href="#" class="agro-services__type-of-agro">
                 <img src="images/Vegetables.png" alt="Label agro food">
-                <figcaption>Vegetables</figcaption>
-            </figure>
-        </div>
+                <span>Vegetables</span>
+            </a>
+        </nav>
     </section>
-    <section class="agro-perfect">
+    <section id="pages" class="agro-perfect">
         <h2><span>Agro Perfect</span> food for you</h2>
         <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
             looks reasonable. The generated Lorem Ipsum is therefore always free from repetition injected
             humour, or non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply
             random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
             2000 years old.</p>
-        <input class="agro-perfect__submit" type="submit" value="Discover">
+        <!--        <input class="agro-perfect__submit" type="submit" value="Discover">-->
+        <a href="" class="agro-perfect__submit">Discover</a>
+
     </section>
     <section class="examples-of-food">
         <div class="examples-of-food__content">
             <figure class="examples-of-food__food-position">
-                <img src="images/ef-helth.jpg" alt="Food photography">
+                <img src="images/ef-helth.jpg" alt="Food photography" width="292" height="220">
                 <figcaption>
                     <h3>Health Benefits of a Raw Food</h3>
                     <p>Dogfish shark, bango hog sucker, baikal oilfish, eeltail catfish regal whiptail catfish</p>
                 </figcaption>
             </figure>
             <figure class="examples-of-food__food-position">
-                <img src="images/ef-tipsForRipening.jpg" alt="Food photography">
+                <img src="images/ef-tipsForRipening.jpg" alt="Food photography" width="292" height="220">
                 <figcaption>
                     <h3>Tips for Ripening your Fruit</h3>
                     <p>The generated Lorem Ipsum is therefore always free from repetition injected humour</p>
                 </figcaption>
             </figure>
             <figure class="examples-of-food__food-position change-photos">
-                <img src="images/ef-Superfoods.jpg" alt="Food photography">
+                <img src="images/ef-Superfoods.jpg" alt="Food photography" width="292" height="220">
                 <figcaption>
                     <h3>Superfoods you should be eating</h3>
                     <p>The generated Lorem Ipsum is therefore always free from repetition injected humour</p>
                 </figcaption>
             </figure>
             <figure class="examples-of-food__food-position change-photos">
-                <img src="images/ef-GruntTorrentCatfish.jpg" alt="Food photography">
+                <img src="images/ef-GruntTorrentCatfish.jpg" alt="Food photography" width="292" height="220">
                 <figcaption>
                     <h3>Grunt torrent catfish squaretail Norwegian Atlantic salmon</h3>
                     <p>Northern clingfish searobin betta blue shark. Jackfish leopard danio </p>
@@ -168,38 +180,38 @@
             </figure>
         </div>
     </section>
-    <section class="products">
+    <section id="gallery" class="products">
         <a href="#" class="products__food">
             <img src="images/product-1.jpg" alt="Photo products">
-            <p class="products__food__text">Testy Jam</p>
+            <span class="products__food__text">Testy Jam</span>
         </a>
         <a href="#" class="products__food">
             <img src="images/product-2.jpg" alt="Photo products">
-            <p class="products__food__text">Testy Jam</p>
+            <span class="products__food__text">Testy Jam</span>
         </a>
         <a href="#" class="products__food">
             <img src="images/product-3.jpg" alt="Photo products">
-            <p class="products__food__text">Testy Jam</p>
+            <span class="products__food__text">Testy Jam</span>
         </a>
         <a href="#" class="products__food">
             <img src="images/product-4.jpg" alt="Photo products">
-            <p class="products__food__text">Testy Jam</p>
+            <span class="products__food__text">Testy Jam</span>
         </a>
         <a href="#" class="products__food">
             <img src="images/product-5.jpg" alt="Photo products">
-            <p class="products__food__text">Testy Jam</p>
+            <span class="products__food__text">Testy Jam</span>
         </a>
         <a href="#" class="products__food">
             <img src="images/product-6.jpg" alt="Photo products">
-            <p class="products__food__text">Testy Jam</p>
+            <span class="products__food__text">Testy Jam</span>
         </a>
         <a href="#" class="products__food">
             <img src="images/product-7.jpg" alt="Photo products">
-            <p class="products__food__text">Testy Jam</p>
+            <span class="products__food__text">Testy Jam</span>
         </a>
         <a href="#" class="products__food">
             <img src="images/product-8.jpg" alt="Photo products">
-            <p class="products__food__text">Testy Jam</p>
+            <span class="products__food__text">Testy Jam</span>
         </a>
     </section>
     <section class="people-say">
@@ -223,24 +235,19 @@
                     laboriosam laudantium maiores optio quidem repellat sit voluptatibus? Lorem ipsum dolor
                     sit amet, consectetur adipisicing elit. Culpa enim itaque repellendus rerum tempore ut!</p>
 
-                <figure id="people-1" class="people-say__people people_show">
-                    <img src="images/person-1.jpg" alt="Person photo">
-                    <figcaption>
-                        <p><span>Terens Smith</span>/CEO AntalAgro</p>
-                    </figcaption>
-                </figure>
-                <figure id="people-2" class="people-say__people ">
-                    <img src="images/person-2.jpg" alt="Person photo">
-                    <figcaption>
-                        <p><span>Jack Lorem</span>/CEO AntalAgro</p>
-                    </figcaption>
-                </figure>
-                <figure id="people-3" class="people-say__people ">
-                    <img src="images/person-3.jpg" alt="Person photo">
-                    <figcaption>
-                        <p><span>Linda Kolin</span>/Web-senior AntalAgro</p>
-                    </figcaption>
-                </figure>
+                <div id="people-1" class="people-say__people people_show">
+                    <img src="images/person-1.jpg" alt="Person photo" width="69" height="69">
+                    <p><span>Terens Smith</span>/CEO AntalAgro</p>
+
+                </div>
+                <div id="people-2" class="people-say__people ">
+                    <img src="images/person-2.jpg" alt="Person photo" width="69" height="69">
+                    <p><span>Jack Lorem</span>/CEO AntalAgro</p>
+                </div>
+                <div id="people-3" class="people-say__people ">
+                    <img src="images/person-3.jpg" alt="Person photo" width="69" height="69">
+                    <p><span>Linda Kolin</span>/Web-senior AntalAgro</p>
+                </div>
                 <nav class="people-say__navigate">
                     <div id="nav-1" class="people-say__navigate__point point-active"></div>
                     <div id="nav-2" class="people-say__navigate__point"></div>
@@ -250,7 +257,7 @@
             <a href="javascript:buttonLeft(1)" id="button-right" class="people-say__button people-say__button_right">&gt;</a>
         </div>
     </section>
-    <section class="blog-posts">
+    <section id="blog" class="blog-posts">
         <h2><span>Blog</span> Posts</h2>
         <p>Latin words, combined with a handful of model sentence structures, to generate
             Lorem Ipsum which looks reasonable.</p>
@@ -301,7 +308,7 @@
             </a>
         </div>
     </section>
-    <footer class="organic-footer">
+    <footer id="contacts" class="organic-footer">
         <div class="organic-data">
             <a href="" class="header__logo"></a>
             <nav class="organic-footer__navigate">
@@ -334,44 +341,13 @@
                     <a href="#" class="social__block linkedin"></a>
                 </div>
             </div>
-            <p class="organic-footer__product-created">&copy; 2017, AgroTheme by Artureanec | Privacy Policy | Sitemap</p>
+            <p class="organic-footer__product-created">&copy; 2017, AgroTheme by Artureanec | Privacy Policy |
+                Sitemap</p>
             <p class="organic-footer__rights">All Rights Reserved.</p>
         </div>
         <div class="organic-map"></div>
     </footer>
 </div>
-<script>
-    function moveElement() {
-        document.getElementsByClassName('point-active')[0].classList.remove('point-active');
-        document.getElementsByClassName('dialog_show')[0].classList.remove('dialog_show');
-        document.getElementsByClassName('people_show')[0].classList.remove('people_show');
-    }
-
-    function addElement(num) {
-        document.getElementById('nav-' + num).classList.add('point-active');
-        document.getElementById('dialog-' + num).classList.add('dialog_show');
-        document.getElementById('people-' + num).classList.add('people_show');
-    }
-
-    let pointNav = document.getElementsByClassName('people-say__navigate__point');
-    for (let i = 0; i < pointNav.length; i++) {
-        pointNav[i].onclick = function () {
-            moveElement();
-            addElement(i + 1);
-        }
-    }
-
-    function buttonLeft(sideNav) {
-        let navPosition = document.getElementsByClassName('point-active')[0].id.split('-')[1];
-        let colElement = document.getElementsByClassName('people-say__navigate__point').length;
-        let activeElement = navPosition;
-        if (sideNav > 0) activeElement++;
-        else activeElement--;
-        if (activeElement > colElement) activeElement = 1;
-        else if (activeElement == 0) activeElement = colElement;
-        moveElement();
-        addElement(activeElement);
-    }
-</script>
+<script src="scripts/controls.js"></script>
 </body>
 </html>
