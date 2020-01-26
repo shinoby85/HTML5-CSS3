@@ -207,16 +207,19 @@
         <p>Latin words, combined with a handful of model sentence structures, to generate
             Lorem Ipsum which looks reasonable.</p>
         <div class="people-say-container">
-            <a href="javascript:buttonLeft(-1)" id="button-left" class="people-say__button people-say__button_left">&lt;</a>
+            <a href="javascript:buttonLeft(-1)" id="button-left"
+               class="people-say__button people-say__button_left">&lt;</a>
             <div class="people-say__content">
                 <p id="dialog-1" class="people-say__dialog dialog_show">Latin words, combined with a handful of model
                     sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem
                     Ipsum is therefore always free from repetition injected humour, or non-characteristic
-                    words etc.  Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                    words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has
                     roots in a piece of classical Latin literature from 45 BC</p>
-                <p id="dialog-2" class="people-say__dialog">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis fuga labore optio quam
+                <p id="dialog-2" class="people-say__dialog">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aut blanditiis fuga labore optio quam
                     sapiente! Deleniti nobis obcaecati temporibus vel.</p>
-                <p id="dialog-3" class="people-say__dialog">Ab aliquid assumenda consequatur deleniti distinctio earum expedita facere facilis illum, ipsum
+                <p id="dialog-3" class="people-say__dialog">Ab aliquid assumenda consequatur deleniti distinctio earum
+                    expedita facere facilis illum, ipsum
                     laboriosam laudantium maiores optio quidem repellat sit voluptatibus? Lorem ipsum dolor
                     sit amet, consectetur adipisicing elit. Culpa enim itaque repellendus rerum tempore ut!</p>
 
@@ -299,37 +302,72 @@
         </div>
     </section>
     <footer class="organic-footer">
-        <div class="organic-data"></div>
+        <div class="organic-data">
+            <div class="header__logo"></div>
+            <nav class="organic-footer__navigate">
+                <a href="#" class="organic-footer__navigate__items">Home </a>
+                <a href="#" class="organic-footer__navigate__items">About </a>
+                <a href="#" class="organic-footer__navigate__items">Pages </a>
+                <a href="#" class="organic-footer__navigate__items">Gallery </a>
+                <a href="#" class="organic-footer__navigate__items">Blog </a>
+                <a href="#" class="organic-footer__navigate__items">Contacts </a>
+                <a href="#" class="organic-footer__navigate__items">Partnets</a>
+                <a href="#" class="organic-footer__navigate__items">Customer Service </a>
+                <a href="#" class="organic-footer__navigate__items">Vegetables</a>
+                <a href="#" class="organic-footer__navigate__items">Fruits</a>
+                <a href="#" class="organic-footer__navigate__items">Organic Food </a>
+                <a href="#" class="organic-footer__navigate__items">Privacy policy </a>
+            </nav>
+            <div class="organic-data__contacts">
+                <div class="organic-data__contacts__email style-contacts">
+                    <p><span>email</span>
+                        <a href="mailto:support@agrocompany.com">support@agrocompany.com</a></p>
+                </div>
+                <div class="organic-data__contacts__phone style-contacts">
+                    <p><span>Phone</span>
+                        <a href="tel:+123456789">+1 (234) 56789</a>,
+                        <a href="tel:+1 987 654 3210">+1 987 654 3210</a></p>
+                </div>
+                <div class="organic-data__contacts__social">
+                    <a href="#" class="social__block twit"></a>
+                    <a href="#" class="social__block face"></a>
+                    <a href="#" class="social__block linkedin"></a>
+                </div>
+            </div>
+
+        </div>
         <div class="organic-map"></div>
     </footer>
 </div>
 <script>
-    function moveElement(){
+    function moveElement() {
         document.getElementsByClassName('point-active')[0].classList.remove('point-active');
         document.getElementsByClassName('dialog_show')[0].classList.remove('dialog_show');
         document.getElementsByClassName('people_show')[0].classList.remove('people_show');
     }
-    function addElement(num){
-        document.getElementById('nav-'+num).classList.add('point-active');
-        document.getElementById('dialog-'+num).classList.add('dialog_show');
-        document.getElementById('people-'+num).classList.add('people_show');
+
+    function addElement(num) {
+        document.getElementById('nav-' + num).classList.add('point-active');
+        document.getElementById('dialog-' + num).classList.add('dialog_show');
+        document.getElementById('people-' + num).classList.add('people_show');
     }
-    let pointNav=document.getElementsByClassName('people-say__navigate__point');
-    for (let i=0;i<pointNav.length;i++){
-        pointNav[i].onclick=function(){
+
+    let pointNav = document.getElementsByClassName('people-say__navigate__point');
+    for (let i = 0; i < pointNav.length; i++) {
+        pointNav[i].onclick = function () {
             moveElement();
-            addElement(i+1);
+            addElement(i + 1);
         }
     }
 
-    function buttonLeft(sideNav){
-        let navPosition=document.getElementsByClassName('point-active')[0].id.split('-')[1];
-        let colElement=document.getElementsByClassName('people-say__navigate__point').length;
-        let activeElement=navPosition;
-        if (sideNav>0) activeElement++;
+    function buttonLeft(sideNav) {
+        let navPosition = document.getElementsByClassName('point-active')[0].id.split('-')[1];
+        let colElement = document.getElementsByClassName('people-say__navigate__point').length;
+        let activeElement = navPosition;
+        if (sideNav > 0) activeElement++;
         else activeElement--;
-        if(activeElement>colElement)activeElement=1;
-        else if(activeElement==0)activeElement=colElement;
+        if (activeElement > colElement) activeElement = 1;
+        else if (activeElement == 0) activeElement = colElement;
         moveElement();
         addElement(activeElement);
     }
