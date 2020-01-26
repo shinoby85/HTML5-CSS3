@@ -816,6 +816,7 @@ header {
   width: 38%; }
 
 .organic-footer .header__logo {
+  display: block;
   height: 134px; }
 
 .organic-footer__navigate {
@@ -844,10 +845,16 @@ header {
   color: #ffffff; }
 
 .organic-data__contacts {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
-  margin-top: 74px;
+  margin-top: 65px;
+  margin-bottom: 20px;
+  padding-bottom: 25px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-bottom: 1px solid #464646; }
 
 .organic-data__contacts__email {
   width: 190px; }
@@ -895,5 +902,22 @@ organic-data__contacts__phone {
 .linkedin {
   background: url(../images/linkedin.png) no-repeat;
   background-size: cover; }
+
+.organic-footer__product-created,
+.organic-footer__rights {
+  float: left;
+  color: #7e7e7e;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400; }
+
+.organic-footer__product-created {
+  float: left; }
+
+.organic-footer__rights {
+  float: right; }
+
+.organic-map {
+  background: url("../images/map-logo.png") no-repeat 56% 50%, url("../images/map.jpg") no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
