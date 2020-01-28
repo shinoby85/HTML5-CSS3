@@ -1061,6 +1061,7 @@ organic-data__contacts__phone {
   .slogan__image {
     padding: 45px 0 0 38em;
     width: 67em;
+
     p {
       width: 400px;
       font-size: 70px;
@@ -1251,9 +1252,254 @@ organic-data__contacts__phone {
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1050px) {
+
   .container {
     width: 700px;
   }
+  header {
+    padding: 0 1em;
+    min-height: 70px;
+  }
+  .header__logo {
+    width: 70px;
+    height: 125px;
+    background-size: 50%;
+  }
+  .header__menu {
+    height: 70px;
+    margin-left: 6em;
+  }
+  .header__menu-items {
+    font-size: 12px;
+  }
+  .header__submit {
+    width: 120px;
+    height: 35px;
+    font-size: 10px;
+  }
+  .organic-food {
+    height: 780px;
+  }
+  .organic-food__title {
+    margin-top: 140px;
+    margin-left: 140px;
+    font-size: 90px;
+    height: 200px;
+  }
+  .organic-food__food {
+    min-height: 305px;
+    font-size: 18px;
+  }
+  .organic-food__food__category {
+    padding-left: 15px;
+  }
+  .organic-food__food .agro {
+    font-size: 18px;
+  }
+  .slogan {
+    padding: 4em 4em;
+    min-height: 410px;
 
+  }
+  .slogan__image {
+    width: 35em;
+    height: 280px;
+    padding: 31px 0 0 20em;
+  }
+  .slogan__image p {
+    width: 200px;
+    font-size: 38px;
+  }
+  .agro-services {
+    padding: 70px 0 80px;
+  }
+  .agro-services h2 {
+    font-size: 30px;
+  }
+  .agro-services p {
+    margin: 0px auto 0;
+    font-size: 15px;
+  }
+  .agro-services__content {
+    margin: 70px auto 0;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .agro-services__type-of-agro img {
+    width: 30px;
+  }
+  .agro-services__type-of-agro span {
+    font-size: 12px;
+  }
+  .agro-perfect {
+    padding-top: 30px;
+    padding-left: 100px;
+    min-height: 540px;
+  }
+  .agro-perfect h2 {
+    text-align: left;
+    font-size: 30px;
+    line-height: inherit;
+  }
+  .agro-perfect p {
+    font-size: 15px;
+  }
+  .agro-perfect__submit {
+    width: 120px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .examples-of-food {
+    height: 770px;
+  }
+  .examples-of-food__content {
+    width: 73%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+
+  }
+  .examples-of-food__content .change-photos img {
+    float: left;
+  }
+  .examples-of-food__content .change-photos figcaption {
+    background-color: #fff;
+    height: 193px;
+  }
+  .tasty-cakes__title {
+    font-size: 90px;
+    width: 300px;
+    line-height: inherit;
+  }
+  .tasty-cakes {
+    padding-top: 70px;
+    min-height: 520px;
+    background: url(../images/test-cakes-label.png) no-repeat 94% 5%,
+    url(../images/tast-cakes-background_optimized.png) no-repeat 100%,
+    #f9f9f9;
+  }
+  .agro-progress {
+    padding: 30px 0 50px
+  }
+  .agro-progress h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .agro-progress p {
+    font-size: 15px;
+  }
+  .agro-progress__content {
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .agro-progress__content__type-of-progress {
+    width: 170px;
+    margin: 0 60px;
+  }
+  .agro-progress__content__type-of-progress img {
+    width: 40px;
+  }
+  .agro-progress__content__type-of-progress figcaption h3 {
+    margin: 0;
+    font-size: 30px;
+    line-height: inherit;
+  }
+  .agro-progress__content__type-of-progress figcaption p {
+    line-height: inherit;
+  }
+  .products {
+    min-height: 390px;
+  }
+  .people-say {
+    min-height: 520px;
+  }
+  .people-say-container {
+    width: 100%;
+  }
+  .people-say h2 {
+    font-size: 30px;
+  }
+  .people-say p {
+    font-size: 15px;
+    line-height: inherit;
+  }
+  .people-say__content {
+    padding: 0px 55px 20px;
+  }
+  .people-say .people-say__content .people-say__dialog {
+    font-size: 14px;
+    min-height: 125px;
+  }
+  .people-say__people {
+    width: 395px;
+  }
+  .people-say__content:before {
+    font-size: 70px;
+    left: 25px;
+  }
+  .people-say__button {
+    display: none;
+  }
+  .blog-posts {
+    padding: 15px 0 30px;
+    min-height: 670px;
+  }
+  .blog-posts h2 {
+    font-size: 30px;
+  }
+  .blog-posts p {
+    font-size: 15px;
+  }
+  .blog-posts__news {
+    width: 185px;
+    height: 200px;
+    padding: 50px 15px 25px;
+  }
+  .news-date {
+    width: 40px;
+    height: 50px;
+    left: 15px;
+    padding-top: 10px;
+
+  }
+  .news-date .news-date__day {
+    font-size: 20px;
+  }
+
+  .blog-post__news__text {
+    font-size: 12px;
+  }
+  .blog-posts__partners {
+    margin: 15px auto 0;
+    flex-wrap: wrap;
+  }
+  .blog-posts__partners___company img {
+    border-style: none;
+    width: 80px;
+  }
+
+  .organic-data {
+    padding: 20px 20px 0 20px;
+  }
+  .organic-footer .header__logo {
+    height: 70px;
+    width: 60px;
+  }
+  .organic-footer__navigate {
+    margin: 0 0 0 8em;
+  }
+  .organic-data__contacts {
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+  }
+  .organic-footer__rights {
+    float: left;
+  }
+  .organic-map {
+    background: url(../images/map-logo.png) no-repeat 63% 50%, url(../images/map.jpg) no-repeat 50%;
+  }
 }
