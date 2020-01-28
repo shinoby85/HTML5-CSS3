@@ -35,7 +35,7 @@ body {
 header {
   position: absolute;
   min-height: 110px;
-  padding: 0 215px;
+  padding: 0 13em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -200,7 +200,7 @@ header {
   width: 73em;
   height: 530px;
   padding: 45px 0 0 40em;
-  background: url("../images/slogan-frame.jpg") no-repeat 52% 25%, url("../images/slogan-back.jpg") no-repeat 52% 0%, url("../images/slogan.jpg") no-repeat 0% 100%; }
+  background: url("../images/slogan-bg-full.png") no-repeat; }
   .slogan__image p {
     display: block;
     width: 520px;
@@ -366,7 +366,8 @@ header {
   margin: 0;
   width: 100%; }
   .examples-of-food__food-position img {
-    float: left; }
+    float: left;
+    width: 290px; }
   .examples-of-food__food-position figcaption {
     padding: 30px;
     -webkit-box-sizing: border-box;
@@ -388,7 +389,8 @@ header {
       line-height: 23px; }
 
 .examples-of-food__content .change-photos img {
-  float: right; }
+  float: right;
+  width: 290px; }
 .examples-of-food__content .change-photos figcaption {
   float: left; }
 
@@ -558,8 +560,9 @@ header {
   margin: 30px auto 0;
   min-height: 230px;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  justify-content: center;
+  align-items: center;
+  position: relative; }
 
 .people-say__button {
   display: block;
@@ -577,6 +580,16 @@ header {
   opacity: 0;
   transition: opacity .5s; }
 
+.people-say__button_left {
+  position: absolute;
+  top: 90px;
+  left: 10px; }
+
+.people-say__button_right {
+  position: absolute;
+  top: 90px;
+  right: 10px; }
+
 .people-say__button:hover {
   box-shadow: 0 0 15px inset yellow; }
 
@@ -591,7 +604,7 @@ header {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 60em;
-  padding: 0 0 20px;
+  padding: 0 40px 20px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -613,7 +626,7 @@ header {
 
 .people-say .people-say__content .people-say__dialog {
   width: 100%;
-  height: 113px;
+  min-height: 113px;
   color: #ffffff;
   font-family: "Times New Roman";
   font-style: italic;
@@ -627,7 +640,7 @@ header {
 
 .people-say__people {
   margin: 0;
-  width: 350px;
+  width: 400px;
   display: none; }
   .people-say__people img {
     margin-right: 25px;
@@ -930,5 +943,195 @@ organic-data__contacts__phone {
 
 .organic-map {
   background: url("../images/map-logo.png") no-repeat 56% 50%, url("../images/map.jpg") no-repeat; }
+
+@media only screen and (max-width: 1620px) {
+  .container {
+    width: 1200px; }
+
+  .slogan {
+    padding: 5em 7em; }
+
+  .slogan__image {
+    padding: 45px 0 0 38em;
+    width: 67em; }
+    .slogan__image p {
+      width: 400px;
+      font-size: 70px; }
+
+  .products {
+    min-height: 600px; }
+
+  .people-say__button {
+    margin: 0 20px; }
+
+  .people-say-container {
+    width: 95%; }
+
+  .blog-posts__content {
+    width: 90%; }
+
+  .blog-posts__news {
+    width: 340px;
+    height: 360px;
+    padding: 185px 30px 25px; }
+
+  .blog-posts__partners {
+    margin: 70px auto 0;
+    width: 90%; }
+
+  .organic-footer {
+    min-height: 440px; }
+
+  .organic-data {
+    padding: 45px 50px 47px 120px; }
+
+  .organic-data__contacts {
+    margin-top: 25px; }
+
+  .organic-map {
+    background: url(../images/map-logo.png) no-repeat 56% 50%, url(../images/map.jpg) no-repeat 50%; } }
+@media only screen and (max-width: 1220px) {
+  .container {
+    width: 1024px; }
+
+  header {
+    padding: 0 4em; }
+
+  .organic-food {
+    height: 1168px; }
+
+  .organic-food__title {
+    margin-top: 200px;
+    margin-left: 172px;
+    width: 381px;
+    font-size: 120px;
+    line-height: inherit; }
+
+  .organic-food__food {
+    width: 90%;
+    min-height: 450px;
+    margin: 110px auto 0; }
+
+  .organic-food__food .agro {
+    font-size: 25px;
+    line-height: inherit; }
+
+  .organic-food__food__category {
+    font-size: 25px;
+    line-height: inherit; }
+
+  .slogan__image {
+    width: 50em;
+    height: 390px;
+    background-size: contain;
+    padding: 39px 0 0 28em; }
+
+  .slogan__image p {
+    width: 360px;
+    font-size: 64px;
+    line-height: inherit;
+    height: 291px; }
+
+  .agro-services__content {
+    width: 85%; }
+
+  .agro-services__type-of-agro {
+    min-width: 86px; }
+
+  .agro-services__type-of-agro img {
+    width: 40px; }
+
+  .agro-services__type-of-agro span {
+    margin-top: 20px; }
+
+  .agro-perfect {
+    padding-top: 50px;
+    padding-left: 173px; }
+
+  .examples-of-food__content {
+    width: 1024px; }
+
+  .examples-of-food__food-position figcaption {
+    width: 256px; }
+
+  .examples-of-food {
+    height: 287px; }
+
+  .examples-of-food__food-position {
+    margin: 0 auto; }
+
+  .examples-of-food__content {
+    width: 1024px;
+    height: 387px; }
+
+  .examples-of-food__food-position img {
+    width: 255px; }
+
+  .examples-of-food__content .change-photos img {
+    width: 255px; }
+
+  .examples-of-food__food-position figcaption {
+    height: 190px;
+    width: 255px;
+    padding: 10px; }
+
+  .tasty-cakes__title {
+    font-size: 140px; }
+
+  .agro-progress {
+    padding: 50px 0 50px;
+    min-height: 450px; }
+
+  .agro-progress__content {
+    width: 950px; }
+
+  .products {
+    min-height: 490px; }
+
+  .people-say {
+    padding: 50px 0 50px;
+    min-height: 580px; }
+
+  .people-say__content {
+    padding: 0 110px 20px;
+    width: 55em; }
+
+  .people-say__content:before {
+    left: 55px; }
+
+  .people-say .people-say__content .people-say__dialog {
+    font-size: 19px; }
+
+  .blog-posts {
+    padding: 50px 0 50px;
+    min-height: 805px; }
+
+  .blog-posts__news {
+    width: 274px;
+    height: 336px;
+    background-size: contain;
+    padding: 130px 30px 25px; }
+
+  .blog-post__news__text {
+    line-height: inherit; }
+
+  .blog-posts__content {
+    height: 253px; }
+
+  .organic-footer {
+    min-height: 420px; }
+
+  .organic-data {
+    padding: 40px 40px 35px 40px; }
+
+  .organic-footer .header__logo {
+    height: 100px;
+    width: 80px; }
+
+  .organic-footer__navigate {
+    margin-left: 14em; } }
+@media only screen and (max-width: 950px) {
+  .container {
+    width: 700px; } }
 
 /*# sourceMappingURL=style.css.map */
