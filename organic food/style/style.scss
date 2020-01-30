@@ -140,6 +140,15 @@ header {
   border-bottom: 2px solid #fcdb5a;
 }
 
+.menu__control {
+  display: none;
+}
+
+.menu__button {
+  display: none;
+}
+
+
 .header__submit {
   width: 153px;
   height: 45px;
@@ -711,7 +720,7 @@ header {
 
 .people-say__people {
   margin: 0;
-  width: 400px;
+  width: 420px;
   display: none;
 
   img {
@@ -1503,3 +1512,127 @@ organic-data__contacts__phone {
     background: url(../images/map-logo.png) no-repeat 63% 50%, url(../images/map.jpg) no-repeat 50%;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .content {
+    width: 100%;
+  }
+  header {
+    padding: 0 1em;
+    border-bottom: 1px solid transparent;
+  }
+  .header__submit {
+    display: none;
+  }
+  .header__logo {
+    width: 60px;
+    height: 80px;
+    z-index: 50;
+  }
+  .menu {
+    position: fixed;
+    z-index: 2;
+    background: #000;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    top: -115px;
+    left: 0;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 2;
+    text-transform: uppercase;
+    transition: top 1s ease-in-out;
+  }
+
+  .menu__control {
+    display: none;
+  }
+  .menu__control:checked + .menu {
+    top: 0;
+  }
+
+  .menu__control:checked + .menu .menu__button {
+    bottom: 50%;
+  }
+
+  .menu__control:checked + .menu + .container {
+    top: 115px;
+  }
+
+
+  .menu__button {
+    display: block;
+    width: 30px;
+    height: 25px;
+    padding: 10px;
+    background: #000;
+    cursor: pointer;
+    position: absolute;
+    left: 88%;
+    bottom: -55%;
+    transition: bottom 1s ease-in-out;
+  }
+
+  .menu__button-line {
+    display: block;
+    margin-top: 5px;
+    border-bottom: 2px solid #fff;
+  }
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+  .organic-footer .header__logo {
+    z-index: 1;
+  }
+
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  header {
+
+    position: fixed;
+    z-index: 100;
+  }
+  .header__menu {
+    margin-left: 4em;
+  }
+  .header__menu-items {
+    font-size: 17px;
+    font-weight: 700;
+    color: orange;
+  }
+  .header__menu-items:hover {
+    border-bottom: 2px solid transparent;
+  }
+  .header__submit {
+    border: 2px solid lightseagreen;
+    background-color: #fcdb5a;
+  }
+  .slogan__image {
+    margin: 0 auto;
+  }
+  .examples-of-food__food-position {
+    background-color: #fff;
+  }
+  .examples-of-food__content .change-photos figcaption {
+    float: right;
+  }
+  .people-say .people-say__content .people-say__dialog {
+    font-size: 20px;
+  }
+  .people-say {
+    background-size: auto;
+  }
+  .organic-data__contacts__email {
+    width: 100%;
+  }
+}
+
